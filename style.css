@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(214, 10%, 40%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --fs-default: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 375px;
+  font-size: var(--fs-default);
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+}
+
+.card1__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  padding: 0 20px 0 20px;
+}
+
+.star {
+  width: 20px;
+  margin-bottom: 20px;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  /* padding: 20px; */
+}
+
+/* .icon-background {
+  background-color: var(--medium-grey);
+  padding: 20px;
+  border-radius: 50%;
+} */
+
+.header {
+  color: white;
+  margin: 0;
+}
+
+.body {
+  color: var(--light-grey);
+}
+
+.rating_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating_btn {
+  background-color: var(--medium-grey);
+  color: var(--light-grey);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  outline: none;
+  border: none;
+}
+
+.rating_btn:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.rating_btn:focus {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+.btn_submit {
+  font-weight: 700;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+}
+
+.btn_submit:hover {
+  background-color: white;
+  color: var(--orange);
+}
+
+.card2 .card2__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  padding: 0 20px 0 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.illustration {
+  max-width: 33%;
+  margin-bottom: 20px;
+}
+
+.selectionMsg {
+  text-align: center;
+  color: var(--orange);
+  background-color: var(--medium-grey);
+  width: 200px;
+  border-radius: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+}
+
+.card2__body {
+  text-align: center;
+  color: var(--light-grey);
+}
+
+@media screen {
+  .body {
+    max-width: 1440px;
+  }
+}
