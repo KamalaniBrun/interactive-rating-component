@@ -38,10 +38,18 @@ body {
 
 .star {
   width: 20px;
-  margin-bottom: 20px;
+}
+
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
   background-color: var(--medium-grey);
   border-radius: 50%;
-  /* padding: 20px; */
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* .icon-background {
